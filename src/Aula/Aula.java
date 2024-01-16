@@ -1,6 +1,7 @@
 package Aula;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Aula {
 
@@ -11,8 +12,12 @@ private Alumno alumnos[];
 alumnos = new Alumno[capacidad];
 	}
 	
-	
-	
+	public Alumno AddAlumno(Alumno Alumno) {
+		Alumno.DarNombre();
+		Alumno.DarEdad();
+		 
+		return Alumno;
+	}
 	
 	
 	
