@@ -5,25 +5,20 @@ import java.util.Scanner;
 
 public class Aula {
 
-private int capacidad;
+private int cuantos;
 private Alumno alumnos[];
 
 	public Aula(int capacidad) {
-alumnos = new Alumno[capacidad];
+		alumnos = new Alumno[capacidad];
+		cuantos=0;
 	}
 	
-	public Alumno AddAlumno(Alumno Alumno) {
-		Alumno.DarNombre();
-		Alumno.DarEdad();
-		 
-		return Alumno;
+	public void add(Alumno Alumno) {
+		if(cuantos<alumnos.length) {
+		alumnos[cuantos]=Alumno;
+		cuantos++;
+		}
 	}
-	
-	
-	
-	
-	
-	
 	
 	
  public String toString() {
